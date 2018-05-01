@@ -7,3 +7,15 @@ get '/game/:player1/:player2' do
   @winner = duel.game()
   erb( :result )
 end
+
+get '/rules' do
+  erb ( :rules )
+end
+
+get '/' do
+  erb ( :result )
+end
+
+get '/game' do
+  erb ( :game )
+end
