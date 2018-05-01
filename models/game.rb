@@ -26,7 +26,7 @@ class Game
     elsif @player1== "paper" && @player2 =="paper"
       return "draw"
     else
-      return "invalid entry, try again"
+      return "Sorry, invalid entry, try again"
     end
 
   end
