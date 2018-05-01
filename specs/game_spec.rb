@@ -7,7 +7,7 @@ class TestGame < Minitest::Test
   def setup
     @game1 = Game.new("rock","paper")
     @game2 = Game.new("rock","rock")
-    @game3 = Game.new("scissors", "paper")
+    @game3 = Game.new("scissors","paper")
     @game4 = Game.new("scissors", "hammer")
   end
 
@@ -24,7 +24,7 @@ class TestGame < Minitest::Test
   end
 
   def test_game__invalid
-    assert_equal("invalid entry, try again", @game4.game())
+    assert_equal("Sorry, invalid entry, try again", @game4.game())
   end
 
 end
